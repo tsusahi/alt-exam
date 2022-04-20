@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>610</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>610</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Assignments</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #fcfeff</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>590</width>
+     <height>310</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 1&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;. Сделать датчик случайных чисел, который генерирует “0” или “1” с заданными вероятностями (можно взять стандартный датчик, выдающий числа на промежутке [0;1] и рассмотреть границу - число p из этого промежутка; тогда если выпавшее число меньше p выбирается “0”, иначе “1”; нетрудно понять, что “0” будет выбираться с вероятностью p, а “1” - с вероятностью 1-p). Далее число 0 будет означать выбор 1-ой (красной) строки/столбца, а число “1” - выбор второй (синей) строки/столбца.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 2&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;. Рассмотреть следующие вероятностные стратегии игроков: оба игрока равновероятно (с вероятностью ½) выбирают одну или другую строку/столбец.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   1. Провести 100 экспериментов и сохранить вектор из 100 пар бинарных чисел, соответствующих результатам случайного выбора строк/столбцов.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   2. Найти выигрыш/проигрыш игрока A (проигрыш/выигрыш игрока B) в проведенном эксперименте. Найти его среднее значение в одной игре.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   3. Найти математическое ожидание этой величины (теоретическую оценку выигрыша/проигрыша).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   4. Найти среднее квадратичное отклонение от экспериментального среднего в проведенном эксперименте.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   5. Найти дисперсию и теоретическое среднее квадратичное отклонение для данных вероятностей.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 3&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;. Рассмотреть следующие вероятностные стратегии игроков:  игрок A равновероятно выбирает строку, а игрок B (случайно) выбирает красный столбец втрое реже, чем синий. И провести полный цикл исследования, как это описано в предыдущем задании.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 4&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;.  Рассмотреть разные методы “машинного обучения” игрока A при условии, что игрок B придерживается стратегии, описанной в предыдущем задании.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   1. Первый метод: обучение с подкреплением. Для его реализации нужно использовать генератор случайных чисел с переменной границей. Образно этот генератор можно описать так (см. рисунок выше): в коробке у игрока A лежат 10 красных и 10 синих шаров. Он вынимает случайно один шар и выбирает строку, соответствующую цвету шара. После этого в случае выигрыша помещает дополнительные шары того же цвета в количестве равном выигрышу в свою коробку (это соответствует изменению границы p в датчике случайных чисел). В нашем примере это всегда 2 шара.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Для обучения игрока проводятся 100 игр. По полученным после проведения 100 игр вероятностям выбора строки игроком A вычисляются все характеристики задания 2 (понятно, что легче запрограммировать эти вычисления сразу в задании 2).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   2. Второй метод: обучение с наказанием. В коробке около игрока A лежит 100 красных и 100 синих шаров. Он вынимает случайно один шар и выбирает строку, соответствующую цвету шара. После этого в случае проигрыша удаляет шары того же цвета из своей коробки по количеству проигрыша (1 или 3 шара). После этого проводится эксперимент из 100 игр и вычисляются все характеристики задания 2.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;   3. Рассмотреть обучение обоих игроков с подкреплением. В коробках около игроков A и B лежат по 10 красных и 10 синих шаров. Далее они поочередно вынимают случайно по шару из своих коробок и выбирают строку (столбец), соответствующие цветам шаров. После этого в случае выигрыша помещают дополнительные шары того же цвета  в количестве равном выигрышу в свою коробку и не меняют содержимого своей коробки при проигрыше. После этого проводится обучающий эксперимент из 100 игр и вычисляются все характеристики задания 2.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 5&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;.  Провести анализ полученных выше результатов. Выдвинуть гипотезы о “правильных” стратегиях игроков. Является ли игра честной? Кто будет побеждать в этой игре? Каков максимальный выигрыш победителя при правильной игре соперника?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Задание 6&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;.  *Провести аналитические вычисления. Применить сведения из алгебры и анализа для того, чтобы найти оптимальные стратегии игроков.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>340</y>
+     <width>160</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
